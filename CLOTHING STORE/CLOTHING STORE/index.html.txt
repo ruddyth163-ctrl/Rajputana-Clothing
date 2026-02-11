@@ -1,0 +1,285 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rajputana Clothing Store | Royal Ethnic Wear of Rajasthan</title>
+    <meta name="description" content="Rajputana Clothing Store offers royal Rajputi Poshak, Sherwani, Kurta, Safa and traditional ethnic wear inspired by the pride and heritage of Rajasthan.">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #faf7f2;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(90deg, #6b0f1a, #0b1c2d);
+            padding: 15px 20px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        nav h1 {
+            color: #d4af37;
+            font-size: 24px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        nav ul li a:hover {
+            color: #d4af37;
+        }
+
+        section {
+            padding: 60px 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .hero {
+            background: linear-gradient(rgba(107,15,26,0.8), rgba(11,28,45,0.8));
+            color: #fff;
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        .hero h2 {
+            font-size: 40px;
+            margin-bottom: 15px;
+            color: #d4af37;
+        }
+
+        .hero p {
+            font-size: 18px;
+            max-width: 700px;
+            margin: auto;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .section-title h2 {
+            color: #6b0f1a;
+            font-size: 32px;
+        }
+
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .product-card {
+            background: #fff;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .product-card h3 {
+            color: #0b1c2d;
+            margin-bottom: 10px;
+        }
+
+        .product-card p {
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+
+        .price {
+            font-weight: bold;
+            color: #6b0f1a;
+            margin-bottom: 15px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #6b0f1a;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .btn:hover {
+            background: #d4af37;
+            color: #000;
+        }
+
+        .about {
+            text-align: center;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .about p {
+            font-size: 16px;
+        }
+
+        .contact-form {
+            max-width: 600px;
+            margin: auto;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        .contact-form button {
+            width: 100%;
+            padding: 12px;
+            background: #0b1c2d;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .contact-form button:hover {
+            background: #6b0f1a;
+        }
+
+        footer {
+            background: #0b1c2d;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        footer p {
+            font-size: 14px;
+        }
+
+        @media (max-width: 600px) {
+            .hero h2 {
+                font-size: 28px;
+            }
+
+            nav ul {
+                justify-content: center;
+                margin-top: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <nav>
+        <h1>Rajputana Clothing</h1>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section id="home" class="hero">
+    <h2>Royal Rajputana Wear</h2>
+    <p>Experience the pride, tradition, and royal heritage of Rajasthan through our exclusive Rajputana ethnic clothing collection.</p>
+</section>
+
+<section id="products">
+    <div class="section-title">
+        <h2>Our Products</h2>
+    </div>
+    <div class="products">
+        <div class="product-card">
+            <h3>Rajputi Poshak</h3>
+            <p>Traditional royal attire inspired by Rajputana culture.</p>
+            <div class="price">₹4,999</div>
+            <a href="#contact" class="btn">Enquire Now</a>
+        </div>
+
+        <div class="product-card">
+            <h3>Royal Sherwani</h3>
+            <p>Elegant sherwani perfect for weddings and royal occasions.</p>
+            <div class="price">₹7,999</div>
+            <a href="#contact" class="btn">Enquire Now</a>
+        </div>
+
+        <div class="product-card">
+            <h3>Ethnic Kurta</h3>
+            <p>Comfortable and stylish kurta with traditional designs.</p>
+            <div class="price">₹2,499</div>
+            <a href="#contact" class="btn">Enquire Now</a>
+        </div>
+
+        <div class="product-card">
+            <h3>Rajputana Safa</h3>
+            <p>Handcrafted royal turban symbolizing pride and honor.</p>
+            <div class="price">₹1,299</div>
+            <a href="#contact" class="btn">Enquire Now</a>
+        </div>
+    </div>
+</section>
+
+<section id="about">
+    <div class="section-title">
+        <h2>About Us</h2>
+    </div>
+    <div class="about">
+        <p>
+            Rajputana Clothing Store is dedicated to preserving the royal heritage of Rajasthan.
+            Our designs reflect the bravery, honor, and pride of Rajput culture. Each outfit is
+            crafted with care, tradition, and premium quality to give you a truly royal experience.
+        </p>
+    </div>
+</section>
+
+<section id="contact">
+    <div class="section-title">
+        <h2>Contact Us</h2>
+    </div>
+    <div class="contact-form">
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Rajputana Clothing Store | Royal Ethnic Wear of Rajasthan</p>
+</footer>
+
+</body>
+</html>
+```
